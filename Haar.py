@@ -17,6 +17,6 @@ for (x,y,w,h) in faces:
 	
 small = cv2.resize(img, (0,0), fx=0.3, fy=0.3) #Resizing the image to fit the screen
 
-cv2.imshow('img',img)
+cv2.imshow('img',small)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
