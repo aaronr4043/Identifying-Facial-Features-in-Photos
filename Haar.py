@@ -48,7 +48,7 @@ originalImage = cv2.imread(easygui.fileopenbox(msg = 'Select Image For Face Dete
 originalHeight, originalWidth, bpp = np.shape(originalImage)
 
 # Resizing Our Image and Turning it to GrayScale to improve accuracy of our Haar Cascades later on
-hugeImage = cv2.resize(originalImage,None,fx=5, fy=5, interpolation = cv2.INTER_CUBIC) #Upscaling the image to accomodate Haar's
+hugeImage = cv2.resize(originalImage,None,fx=5, fy=5, interpolation = cv2.INTER_CUBIC)
 grayscale = cv2.cvtColor(hugeImage, cv2.COLOR_BGR2GRAY)
 	
 # Running the Haar Cascades and drawing boxes around detected faces
@@ -57,7 +57,7 @@ for (x,y,w,h) in faceDetection:
 	cv2.rectangle(hugeImage,(x,y),(x+w,y+h),(255,0,0),5)
 	
 # Resizing the image back to its origional size 
-finalResult = cv2.resize(hugeImage, (originalWidth, originalHeight)) #Resizing the image to fit the screen
+finalResult = cv2.resize(hugeImage, (originalWidth, originalHeight))
 
 # Writing the image to file and displaying it
 cv2.imwrite('FacesDetected.png', finalResult)
