@@ -44,23 +44,23 @@ import easygui
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
  
 # Reading in our Image and then get its dimensions
-OrigionalImage = cv2.imread(easygui.fileopenbox(msg = 'Select Image For Face Detection'))
-OrigionalHeight, OrigionalWidth, bpp = np.shape(OrigionalImage)
+originalImage = cv2.imread(easygui.fileopenbox(msg = 'Select Image For Face Detection'))
+originalHeight, originalWidth, bpp = np.shape(originalImage)
 
 # Resizing Our Image and Turning it to GrayScale to improve accuracy of our Haar Cascades later on
-HugeImage = cv2.resize(OrigionalImage,None,fx=5, fy=5, interpolation = cv2.INTER_CUBIC) #Upscaling the image to accomodate Haar's
-Grayscale = cv2.cvtColor(HugeImage, cv2.COLOR_BGR2GRAY)
+hugeImage = cv2.resize(originalImage,None,fx=5, fy=5, interpolation = cv2.INTER_CUBIC) #Upscaling the image to accomodate Haar's
+grayscale = cv2.cvtColor(hugeImage, cv2.COLOR_BGR2GRAY)
 	
 # Running the Haar Cascades and drawing boxes around detected faces
-FaceDetection = face_cascade.detectMultiScale(Grayscale, 1.3, 5)
-for (x,y,w,h) in FaceDetection:
-	cv2.rectangle(HugeImage,(x,y),(x+w,y+h),(255,0,0),5)
+faceDetection = face_cascade.detectMultiScale(grayscale, 1.3, 5)
+for (x,y,w,h) in faceDetection:
+	cv2.rectangle(hugeImage,(x,y),(x+w,y+h),(255,0,0),5)
 	
 # Resizing the image back to its origional size 
-FinalResult = cv2.resize(HugeImage, (OrigionalWidth, OrigionalHeight)) #Resizing the image to fit the screen
+finalResult = cv2.resize(hugeImage, (originalWidth, originalHeight)) #Resizing the image to fit the screen
 
 # Writing the image to file and displaying it
-cv2.imwrite('FacesDetected.png', FinalResult)
-cv2.imshow('Detected Faces', FinalResult)
+cv2.imwrite('FacesDetected.png', finalResult)
+cv2.imshow('Detected Faces', finalResult)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
