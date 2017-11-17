@@ -6,7 +6,12 @@
 #
 # Introduction: This program is designed to locate faces within images by using Image Processing techniques and Machine Learning
 #
-# Initial Thoughts and Ideas: James  - 
+# Initial Thoughts and Ideas: James  - I wanted to do something similar to this with my final year project, but with the
+#									   added complexity of matching faces that had been seen before and adding in some machine
+#									   learning. Therefore I feel as though this project will be beneficial and maybe I could
+#									   incorporate some machine learning in with this aswell, though I see the complexity is 
+#									   already there as we have only touched on skin, not defining features as not every piece
+#									   of skin is the face. 
 #                             Gytis  -
 #                             Aaron  - I like the sounds of this project, looks quite complex perhaps we can threshold
 #                                      for skin initially and then from there all we should have to do is distinguish
@@ -17,7 +22,13 @@
 #                                      computer. We have learned about thresholding skin which could help, but I feel it
 #                                      will be a challenging project.
 #
-# Final Thoughts and Reflections: James  -
+# Final Thoughts and Reflections: James  - I feel like this project has satisfied the criteria we set out to, although I
+#										   am disappointed we could not incorperate the HOG method as I put a lot of research
+#										   into it, but I am very happy with how the project turned out, especially with respect
+#										   to how well it picks out the faces. I am also very happy with how the team worked 
+#										   together and the contribution from each member. If I were to do this project again
+#									       there is very little I would change, had we more time I would have perhaps tried to 
+#										   reduce false negatives, but overall I am happy with how this project has turned out.
 #                                 Gytis  -
 #                                 Aaron  - I am very happy with the end result of our project. It was bit of a slow burner
 #                                          initially, but given a bit of time we really made a lot of progress in a very short
