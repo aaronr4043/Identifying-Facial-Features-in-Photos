@@ -4,14 +4,14 @@
 #
 # Project Title: Finding Regions of Face in Images
 #
-# Introduction: This program is designed to locate faces within images by using Image Processing technuiqes and Machine Learning
+# Introduction: This program is designed to locate faces within images by using Image Processing techniques and Machine Learning
 #
 # Initial Thoughts and Ideas: James  - 
 #                             Gytis  -
 #                             Aaron  - I like the sounds of this project, looks quite complex perhaps we can threshold
 #                                      for skin initially and then from there all we should have to do is distinguish
 #                                      between skin and faces, maybe holes left in the faces such as mouths will help us
-#                                      identify the differance?
+#                                      identify the difference?
 #                             Seamus - My initial thoughts on the project are that it will be quite difficult. While
 #                                      faces seem very distinct I imagine it wont be very easy to classify them for a
 #                                      computer. We have learned about thresholding skin which could help, but I feel it
@@ -19,21 +19,22 @@
 #
 # Final Thoughts and Reflections: James  -
 #                                 Gytis  -
-#                                 Aaron  -
-#                                 Seamus - My final thoughts on the project are sunrising. While I initially though it
+#                                 Aaron  - I am very happy with the end result of our project. It was bit of a slow burner
+#                                          initially, but given a bit of time we really made a lot of progress in a very short
+#                                          timespan. I think our project is a great example of what can be done when machine
+#                                          learning and image processing meet. I want to give props to the three lads who all had
+#                                          had some great ideas which were used in our final program.
+#                                 Seamus - My final thoughts on the project are surprising. While I initially though it
 #                                          would be very difficult our goal, it turned out to be a lot easier. Haar
 #                                          cascades turned out to be the simplest way to do it. OpenCV provides trained
 #                                          models for Haar so we don't have to train it (which is outside the scope of
 #                                          the project). I found the project very interesting and enjoyable overall, and
 #                                          thanks to Aaron who took the lead on the project giving us direction.
 #
-#
-# Start Date: September Somthingth
-#
-# Finish Date: 16/11/2017
+# Finish Date: 22/11/2017
 #
 # Algorithm Description: The Algorithm is a rather simple one, here it is broken down step by step
-#    Step 1. Import Libraries For use in the code
+#   Step 1. Import Libraries For use in the code
 #   Step 2. Load Our Classifier, We will need further down
 #   Step 3. User Selects their image and we extract the images dimensions
 #   Step 4. We Resize our image before making it GreyScale, This helps with our Haar Cascades as it will not work on
@@ -43,6 +44,7 @@
 #   Step 7. Draw box around each with that percentage
 #   Step 8. Resize our image back to its origional state
 #   Step 9. Display and write final result to file
+
 
 
 # Importing our Libraries
