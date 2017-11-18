@@ -5,7 +5,7 @@ positives and false negatives. To reduce false positives we introduced a method 
 reduce the number of false negatives the images are upscaled before we run our Cascades, this gives the cascades a greater
 chance of picking up faces as they are much larger.
 
-# Running Application
+# Running The Application
 
 -   Download or clone the repository to a folder of your choice
 -   Using the command line or anaconada prompt navigate to this folder
