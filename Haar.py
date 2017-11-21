@@ -6,36 +6,43 @@
 #
 # Introduction: This program is designed to locate faces within images by using Image Processing techniques and Machine Learning
 #
-# Initial Thoughts and Ideas: James  - I wanted to do something similar to this with my final year project, but with the
+# Initial Thoughts and Ideas: James  - 	I wanted to do something similar to this with my final year project, but with the
 #									   added complexity of matching faces that had been seen before and adding in some machine
 #									   learning. Therefore I feel as though this project will be beneficial and maybe I could
 #									   incorporate some machine learning in with this aswell, though I see the complexity is 
 #									   already there as we have only touched on skin, not defining features as not every piece
 #									   of skin is the face. 
-#                             Gytis  -
-#                             Aaron  - I like the sounds of this project, looks quite complex perhaps we can threshold
+#                             Gytis  - 	First impression, scary. The sound of identifying a face in a picture sounds like a lot
+#									   work and an overall a daunting task. As I have no experience with identifying such an
+#									   ROI and even though it looks difficult, sounds exciting and full of learning material.
+#                             Aaron  - 	I like the sounds of this project, looks quite complex perhaps we can threshold
 #                                      for skin initially and then from there all we should have to do is distinguish
 #                                      between skin and faces, maybe holes left in the faces such as mouths will help us
 #                                      identify the difference?
-#                             Seamus - My initial thoughts on the project are that it will be quite difficult. While
+#                             Seamus - 	My initial thoughts on the project are that it will be quite difficult. While
 #                                      faces seem very distinct I imagine it wont be very easy to classify them for a
 #                                      computer. We have learned about thresholding skin which could help, but I feel it
 #                                      will be a challenging project.
 #
-# Final Thoughts and Reflections: James  - I feel like this project has satisfied the criteria we set out to, although I
+# Final Thoughts and Reflections: James  - 	I feel like this project has satisfied the criteria we set out to, although I
 #										   am disappointed we could not incorperate the HOG method as I put a lot of research
 #										   into it, but I am very happy with how the project turned out, especially with respect
 #										   to how well it picks out the faces. I am also very happy with how the team worked 
 #										   together and the contribution from each member. If I were to do this project again
 #									       there is very little I would change, had we more time I would have perhaps tried to 
 #										   reduce false negatives, but overall I am happy with how this project has turned out.
-#                                 Gytis  -
-#                                 Aaron  - I am very happy with the end result of our project. It was bit of a slow burner
+#                                 Gytis  -	Overall, I am thrilled with the outcome that we managed to achieve. It is exhilarating
+#										   to get my very hands on machine learning and interacting with it. The issues faced
+#										   were quite different than to I am used to and made me aware of another perspective.
+#										   The team that I had was a pleasure to work with and I am happy with the fluid 
+#										   workflow that we managed to accomplish. The guys had interesting ideas that otherwise
+#										   I would have never thought of. Exciting project, pleasing results and a great team. 
+#                                 Aaron  - 	I am very happy with the end result of our project. It was bit of a slow burner
 #                                          initially, but given a bit of time we really made a lot of progress in a very short
 #                                          timespan. I think our project is a great example of what can be done when machine
 #                                          learning and image processing meet. I want to give props to the three lads who all had
 #                                          had some great ideas which were used in our final program.
-#                                 Seamus - My final thoughts on the project are surprising. While I initially though it
+#                                 Seamus - 	My final thoughts on the project are surprising. While I initially though it
 #                                          would be very difficult our goal, it turned out to be a lot easier. Haar
 #                                          cascades turned out to be the simplest way to do it. OpenCV provides trained
 #                                          models for Haar so we don't have to train it (which is outside the scope of
