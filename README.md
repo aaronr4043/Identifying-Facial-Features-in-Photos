@@ -12,7 +12,7 @@ chance of picking up faces as they are much larger.
 -   Type in the following command
 
 ```sh
-$ python FaceDetection.py
+$ python FaceProject.py
 ```
 
 # Results
