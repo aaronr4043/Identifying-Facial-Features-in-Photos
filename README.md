@@ -21,7 +21,7 @@ Here is our first test image given to us.
 ![Graduation No Face Detection](https://i.imgur.com/VRRZ8WI.jpg)
 
 And here are the results of running the application on the image.
-![Graduation Tested](https://i.imgur.com/2anlZzE.jpg)
+![Graduation Tested](https://i.imgur.com/TwaHcjK.png)
 
 Here is an additional image of the Manchester United football team we used for testing.
 ![Image of Yaktocat](https://i.imgur.com/v3xxZCd.jpg)
@@ -30,7 +30,7 @@ And here are our results before checking for false positives.
 ![Tested Manuited](https://i.imgur.com/mSbtVOw.jpg)
 
 And here are our results with the complete application.
-![Pogba Dab](https://i2-prod.mirror.co.uk/incoming/article10494517.ece/ALTERNATES/s615/Manchester-Uniteds-Paul-Pogba-celebrates-winning-the-Europa-League.jpg)
+![Fully Done](https://i.imgur.com/Z6tj1CP.png)
 
 # License 
 
